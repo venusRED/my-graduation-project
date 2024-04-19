@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('./fonts/Oswald.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oswald', 'Roboto', 'Helvetica Neue';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: hsla(0, 0%, 100%, 1);
+	overflow-x: hidden;
+}
+
+@media (min-width: 1440px) {
+	::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+}
+@media (max-width: 1439px) {
+	::-webkit-scrollbar {
+		width: 0.4rem;
+	}
+}
+@media (max-width: 1023px) {
+	::-webkit-scrollbar {
+		width: 0.3rem;
+	}
+}
+@media (max-width: 739px) {
+	::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+::-webkit-scrollbar-track {
+	background-color: hsla(0, 0%, 100%, 1);
+	border-left: solid 0.05rem hsla(0, 0%, 0%, 1);
+}
+::-webkit-scrollbar-thumb {
+	background-color: hsla(0, 0%, 0%, 1);
+}
+
+div::-webkit-scrollbar {
+	height: 0.25rem;
+}
+div::-webkit-scrollbar-track {
+	background-color: hsla(0, 0%, 100%, 1);
+	border: 0;
+}
